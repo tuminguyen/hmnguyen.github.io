@@ -1,0 +1,45 @@
+.navbar .nav-link {
+    color: #333 !important;
+}
+
+section{
+    background-color: lightgray;
+    margin-top: 200px;
+    padding-bottom: 80px;
+}
+
+.btn {
+    background: #d3b20a;
+    border-color: #d3b20a;
+    padding: 20px 0;
+    width: 200px;
+    letter-spacing: 1px;
+    margin: 40px auto 60px;
+    text-transform: uppercase;
+}
+
+.txt-intro{
+    padding-top: 80px;
+}
+
+.txt-intro h1 {
+    font-size: 70px;
+    font-family: 'Oswald,sans-serif';
+    padding-bottom: 40px;
+}
+
+.txt-intro p {
+    color: #111111;
+    letter-spacing: 1px;
+    line-height: 2;
+    font-size: 18px;
+    font-weight: 500;
+    width: 781px;
+    margin: 0 auto;    
+    word-wrap: break-word;
+    font-family: 'Raleway,sans-serif';
+}
+
+#introvid {
+    display: none;
+}
