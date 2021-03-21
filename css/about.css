@@ -5,6 +5,7 @@
 section{
     background-color: lightgray;
     margin-top: 200px;
+    margin-bottom: 200px;
     padding-bottom: 80px;
 }
 
@@ -38,6 +39,11 @@ section{
     margin: 0 auto;    
     word-wrap: break-word;
     font-family: 'Raleway,sans-serif';
+}
+
+#iframe-wrap {
+    width: max-content;
+    margin: 0 auto;
 }
 
 #introvid {

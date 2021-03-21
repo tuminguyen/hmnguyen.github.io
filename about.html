@@ -46,15 +46,21 @@
                     <div class="col-md-12 col-sm-12 col-xs-12 ">
                         <div class="maintext text-center txt-intro">
                             <h1 class="">About Me</h1>
-                            <p class="">Some text</p>
+                            <p class="">I am 26 so I was born in <strong>1995</strong>. I do training martial arts, particularly: <strong>BJJ</strong> 
+                            and <strong>Kudo</strong>. I play <strong>Lego</strong> whenever I have time. I love <strong>animals</strong> except cockroaches.
+                            I play <strong>piano</strong> and <strong>guitar</strong>, a liltle ukulele. I love taking <strong>photograph and drawing</strong> abstract art, 
+                            which I will post on the blog soon. I am doing some <strong>research projects in Computer Vision</strong>.</p>
                             <button type="button" class="btn btn-success btn-block" id="toggle_vid_btn">
                                 Meet me in a video
                             </button>
                         </div>
                     </div>
-                    <div >
-                        <iframe id="introvid" width="600" height="450" src="https://www.youtube.com/embed/ILsQa4u2950"></iframe> 
-
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 ">
+                        <div id="iframe-wrap">
+                            <iframe id="introvid" width="600" height="450" src="https://www.youtube.com/embed/ILsQa4u2950"></iframe> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,8 +78,14 @@
         <script src="js/jquery-easing/jquery.easing.min.js"></script>
         <script>
             $('#toggle_vid_btn').click(function(){
-                $('#introvid').show(2000);
-            }); 
+                $('.text-center').animate({'margin-left': '-700'}, 1000);
+                $('#iframe-wrap').animate({'margin-right': '-200', 'margin-top': '-450'});
+                $('#introvid').show(3000);
+            });
+            
+            $('strong').each(function(){
+                $(this).css('color', '#'+(Math.random()*0xFFFFFF<<0).toString(16));
+            });
         </script>    
     </body>
     
