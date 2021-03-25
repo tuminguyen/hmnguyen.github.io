@@ -42,8 +42,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 ">
-                        <div class="blog-img">
-                        </div>
+                        <div class="blog-img"></div>
                     </div>
                 </div>
                 <div class="row content">
@@ -63,9 +62,9 @@
             var url = window.location.href;
             var blog_id = url.split("?id=")[1];
             var md_src = "markdown/blog_" + blog_id + ".md";
-            var bgImg = "image/blog/blog_" + blog_id + ".png"
+            var bgImg = "image/blog/blog_" + blog_id + ".png";
             document.getElementById('gen-title').textContent = titleList[blog_id-1];
-            document.getElementsByClassName('blog-image')[0].style.backgroundImage = "url(bgImg)";
+            document.getElementsByClassName('blog-img')[0].style.backgroundImage = "url(" + bgImg + ")";
             document.getElementsByClassName("gen-md")[0].src = md_src;
 
         </script>
