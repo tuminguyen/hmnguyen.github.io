@@ -63,7 +63,9 @@
             var url = window.location.href;
             var blog_id = url.split("?id=")[1];
             var md_src = "markdown/blog_" + blog_id + ".md";
+            var bgImg = "image/blog/blog_" + blog_id + ".png"
             document.getElementById('gen-title').textContent = titleList[blog_id-1];
+            document.getElementsByClassName('blog-image')[0].style.backgroundImage = "url(bgImg)";
             document.getElementsByClassName("gen-md")[0].src = md_src;
 
         </script>

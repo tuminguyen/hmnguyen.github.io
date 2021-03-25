@@ -13,7 +13,6 @@ section .container {
 }
 
 .blog-img{
-    background-image: url('../image/blog/elk-stack.png');    
     background-position: center;
     height: 400px;
     background-repeat: no-repeat;
