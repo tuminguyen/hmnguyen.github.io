@@ -818,5 +818,5 @@ DELETE employees
 
 More practice queries you can find via this [hand-on tuitorial](https://coralogix.com/log-analytics-blog/42-elasticsearch-query-examples-hands-on-tutorial/).
 
-This post only cover Elasticsearch, Kibana problem with some practical DSL queries. You can continue with part 2 of ELK stack series with the installation instruction and using guides for Logstash and Filebeat in [here]()
+This post only cover Elasticsearch, Kibana problem with some practical DSL queries. You can continue with part 2 of ELK stack series with the installation instruction and using guides for Logstash and Filebeat in [here](https://tuminguyen.github.io/hmnguyen.github.io/blog_detail.html?id=2)
 
