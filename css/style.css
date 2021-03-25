@@ -522,7 +522,7 @@ div#demo-slider .owl-next {
 
 .post-slide .post-img img{
   width:100%;
-  height:auto
+  height: 100%;
 }
 
 .post-abs {

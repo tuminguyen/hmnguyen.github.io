@@ -1,0 +1,36 @@
+.navbar .nav-link {
+    color: #333 !important;
+}
+
+section {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+section .container {
+    border: 2px solid;
+    padding-bottom: 80px;
+}
+
+.blog-img{
+    background-image: url('../image/blog/elk-stack.png');    
+    background-position: center;
+    height: 400px;
+    background-repeat: no-repeat;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+section .content{
+    margin-top: 55px;
+}
+
+.title {
+    padding: 20px;
+    border: 2px solid;
+}
+
+.gen-md {
+    margin-top: 70px;
+}
