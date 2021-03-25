@@ -63,7 +63,7 @@
             var url = window.location.href;
             var blog_id = url.split("?id=")[1];
             var md_src = "markdown/blog_" + blog_id + ".md";
-            document.getElementById('gen-title').textContent = titleList[blog_id];
+            document.getElementById('gen-title').textContent = titleList[blog_id-1];
             document.getElementsByClassName("gen-md")[0].src = md_src;
 
         </script>
