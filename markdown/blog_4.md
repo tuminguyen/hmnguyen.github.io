@@ -16,10 +16,10 @@ Some statistical figures to check out:
 
 ### How will they use Elasticsearch in their system?
 
-**Hundreds** types of event going through the Keystone processing pipeline can be listed: video viewing activities, UI activities, error logs, performance events, troubleshooting & diagnostic events, etc., So the challenge is now how to make sense of billion of events per day as Netflix store lot of logs. 
+**Hundreds** types of event going through the Keystone processing pipeline can be listed: video viewing activities, UI activities, error logs, performance events, troubleshooting & diagnostic events, etc., So the challenge is now how to make sense of billion of events per day as Netflix stores lot of logs. 
 ![keystone-v1](../image/netflix_b4.png)
 
-Along the evolution of data pipeline, Netflix collect the data, write them to S3 for all offline processing in the very first version. However, as the growing needs, we want to put them go online and do it realtime. Therefore, a solution for big data has been introduced with more efficient and much simpler approach. All the traffic go into Kafka *(producer)* before being routed to Elasticsearch or S3 and comsumed by Kafka consumer. We are then freely to use many real-time stream processing tools such as Spark or Mantis once the data is at Kafka consumer. By eliminating the Chukwa and substituting with Kafka, we has improved the durability of the pipeline since Kafka implements replication while Chukwa doesn’t. 
+Along the evolution of data pipeline, Netflix collects the data, write them to S3 for all offline processing in the very first version. However, as the growing needs, we want to put them go online and do it realtime. Therefore, a solution for big data has been introduced with more efficient and much simpler approach. All the traffic go into Kafka *(producer)* before being routed to Elasticsearch or S3 and comsumed by Kafka consumer. We are then freely to use many real-time stream processing tools such as Spark or Mantis once the data is at Kafka consumer. By eliminating the Chukwa and substituting with Kafka, we has improved the durability of the pipeline since Kafka implements replication while Chukwa doesn’t. 
 ![keystone-v2](../image/netflix_sys.png)
 
 As regards the mentioned 1.3 Pb of data per day, Netflix uses 1500 clusters of Elasticsearch and 3500 instances alone to hold and do analytic, visualize on that enormous amount of data. Elasticsearch operates in a distributed environment: with cross-cluster replication, a secondary cluster can spring into action as a backup. 
@@ -33,7 +33,7 @@ The main use of Elasticsearch is for log-search. For example:
 ### Why Netflix need Elasticsearch?
 But why Elasticsearch, but not anything else?
 
-As in the fast evolving system, Netflix want to be able to add a new field, a new document at anytime for example a new description for an old film. So, they should go **schemaless**. At the same time, we still can set a default for some specific fields if we want
+As in the fast evolving system, Netflix want to be able to add a new field, a new document at anytime for example a new description for an old film. So, they should go **schemaless**. At the same time, we still can set a default for some specific fields if we want.
 
 In fact, there is lots of metatdata of a document, maybe up to hundred or thoudsand of fields. However, for normal searching purpose, we usually don't need all of them but only a few. We can also acquire the documents in any combinations of fields we are interested in with _"fields"_ query. The use of _"fields"_ query allows us to retrieve what we really want to search for.
 
