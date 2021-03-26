@@ -204,7 +204,7 @@ curl -X PUT http://localhost:9200/employees?pretty
 ```
 then it should return:
 
-![elas-index](../image/elastic_dsl.png)
+![elas-index](../image/elas_dsl.png)
 
 As we already launched the service via web browser _(at http://localhost:5601)_, we can use the dev tools and get the job done with shorter commands.
 
