@@ -204,7 +204,7 @@ curl -X PUT http://localhost:9200/employees?pretty
 ```
 then it should return:
 
-![elas-index](../image/elastic_ind.png)
+![elas-index](../image/elastic_dsl.png)
 
 As we already launched the service via web browser _(at http://localhost:5601)_, we can use the dev tools and get the job done with shorter commands.
 
@@ -231,6 +231,7 @@ The default for *number_of_shards* and *number_of_replicas* are 1. Let's check t
 
 
 **Store some data**
+
 OK. After successfully created an employee index. Now, we need to add some data into it.
 
 Since elasticsearch is schemaless so you don't have to define the fixed schema before adding records just like SQL. However, if you expect a field or prosperty in a specific format, you can use the *_mapping* function to predefine it.
