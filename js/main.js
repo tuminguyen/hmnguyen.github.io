@@ -1,11 +1,12 @@
 (function($) {
  
     $('.main-slider').owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
         loop:true,
-        margin:0,
         nav:true,
         dots: false,
-        pagination: true,
         autoHeight: false,
         navText : ["<img src='image/prevarrow.png' />","<img src='image/nextarrow.png' />"],
         responsive:{
@@ -22,6 +23,9 @@
     })
 
     $('.demo-slider').owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 1800,
+        autoplayHoverPause: false,
         loop:true,
         margin:10,
         nav:true,
