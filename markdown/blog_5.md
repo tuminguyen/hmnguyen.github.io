@@ -63,7 +63,7 @@ One important thing to make sure that you can connect to cluster nodes is to ope
 - Click on the **Manage Rules** button on the right of the 1st row
 - Click on **Add Rule** to open the traffic over:
     + port 22 (SSH): access to the nodes, control by command line
-    + port 80 (HTTP): access kibana dashboard from our local comp
+    + port 80 (HTTP): access kibana dashboard from our local computer
 
 ![add-rule](../image/pouta-add-rule.png)
 
@@ -79,7 +79,7 @@ Now go back to **Compute** tab then click on **Instances** to start to create 4 
 
 ![pouta-instance-1](../image/pouta-instance-1.png)
 
-Click on the **Launch Instance** and you will see a pop-up setting dialog. Just set the value followed by this belowed image.
+Click on the **Launch Instance** and you will see a pop-up setting dialog. Just set the value followed by this below image.
 
 In the detail tab:
 
@@ -280,9 +280,9 @@ sudo apt update
 
 <ins>*STEP 2: Configure yaml file*<ins>
 
-At this step, it is more complex to configure the ```elasticsearch.yml``` file compared to the [previous tutorial](https://tuminguyen.github.io/hmnguyen.github.io/blog_detail.html?id=1). So if we only work on 1-node cluster of Elasticsearch, we don't need to do much on the configuration. However, as we have more than 1, so we will assign the role for each node then define its communication.
+At this step, it is more complex to configure the ```elasticsearch.yml``` file compared to the [previous tutorial](https://tuminguyen.github.io/hmnguyen.github.io/blog_detail.html?id=1). So if we only work on 1-node cluster of Elasticsearch, we don't need to do much on the configuration. However, as we have more than 1, we will need to assign the role for each node then define its communication.
 
-If you still remember about the local network of each node _(192.168.1.x)_, now, you can retrive it to later use of binding the the hostname _(node-x)_. 
+If you still remember about the local network of each node _(192.168.1.x)_, now, you can retrive it to later use of binding the the hostname _(node-x)_ by using. 
 ``` 
 hostname -I
 ```
@@ -299,7 +299,7 @@ sudo nano /etc/elasticsearch/elasticsearch.yml
 From the orginal file
 ![es-yml-file](../image/elastic_yml.png)
 
-you will need to enable some lines and edit it with more information to complete the configuration. In particular, you need to focus on **Cluster**, **Node** **Network** and **Discovery** section in the file.
+you will need to enable some lines and edit it with more information to complete the configuration. In particular, you need to focus on **Cluster**, **Node** **Network** and **Discovery** sections of the file.
 
 ```
 ---------------------------------- Cluster -----------------------------------
@@ -367,7 +367,7 @@ sudo dpkg -i kibana-7.0.1-amd64.deb
 sudo apt update
 ```
 
-Again, we need to config the yaml file of Kibana, which is localted in ```/etc/kibana/kibana.yml```
+Again, we need to config the yaml file of Kibana, which is located in ```/etc/kibana/kibana.yml```
 
 ```
 # uncomment the line by deleting # sign at the beginning
@@ -413,17 +413,16 @@ server {
 ```
 Save and quit the file.
 
-Now, if you want to create user and password for kibana login, please do as follow. 
+Now, if you want to create user and password for kibana login, please do as follow. Otherwise, just skip.
 ```
 # Create user and password, store the data in htpasswd.users file
 echo "kibanaadmin:`openssl passwd -apr1`" | sudo tee -a /etc/nginx/htpasswd.users
 
-# As kibanaadmin is the default username, you can freely change it to whatever you want. Example:
+# As kibanaadmin is the default username, you can freely change it to whatever you want. 
+# Example:
 echo "admin:`openssl passwd -apr1`" | sudo tee -a /etc/nginx/htpasswd.users
 
 ```
-
-Otherwise, just skip.
 
 After you run the command, you are required to give the password for the ```admin```. Again, just make the password secure enough, not too complex. 
 
