@@ -138,7 +138,7 @@
             var covers = document.getElementsByClassName('blog-cover');
             for (var i = 0, size = covers.length; i < size; i++) {
                 var bgImg = "image/blog/blog_" + [i+1] + ".png";
-                if (i == 2)
+                if (i == 2 || i == 4)
                     bgImg = "image/blog/blog_" + [i+1] + ".jpg";
                 covers[i].style.backgroundImage = "url(" + bgImg + ")";
             }
