@@ -49,7 +49,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 blog-item">
-                        <div class="blog-cover" style="background-image: url('image/blog/blog_1.png');"></div>
+                        <div class="blog-cover"></div>
                         <div class="blog-descript">
                             <h2>Configure Elasticsearch and Kibana on Ubuntu 20.04</h2>
                             <p>In this post, I will instruct you how to install and configure ELK Stack on Unbuntu 20.04 (Focal Fossa). You will
@@ -63,7 +63,7 @@
                 </div>      
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 blog-item">
-                        <div class="blog-cover" style="background-image: url('image/blog/blog_2.png');"></div>
+                        <div class="blog-cover"></div>
                         <div class="blog-descript">
                             <h2>Configure Logstash and Filebeat on Ubuntu 20.04</h2>
                             <p>This post is the continued section of the Elasticsearch and Kibana, also in the ELK stack series. We will get to know 
@@ -91,10 +91,11 @@
                 </div>   
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 blog-item">
-                        <div class="blog-cover" style="background-image: url('image/blog/blog_4.png');"></div>
+                        <div class="blog-cover"></div>
                         <div class="blog-descript">
                             <h2>How Netflix use Elasticsearch in their business</h2>
-                            <p>Descript 5
+                            <p>This blog will discuss on how Elasticsearch is used in many industry companies these day. 
+                                How they utilize it and what for? 
                             </p>
                             <button type="button" class="btn btn-outline-secondary continue">
                                 Continue reading
@@ -107,8 +108,9 @@
                         <div class="blog-cover">
                         </div>
                         <div class="blog-descript">
-                            <h2>Topic 5</h2>
-                            <p>Descript 5
+                            <h2>Scale up your Elasticsearch project on multiple-nodes cluster CSC Pouta and Ubuntu 20.04</h2>
+                            <p>This is an advanced tutorial for setting up the Elasticsearch system running on cluster of multiple nodes, using CSC cloud service.
+                                The instruction is for Ubuntu users.
                             </p>
                             <button type="button" class="btn btn-outline-secondary continue">
                                 Continue reading
@@ -132,7 +134,18 @@
                     window.location = "https://tuminguyen.github.io/hmnguyen.github.io/blog_detail.html?id=" + (i+1);
                 }.bind(null, i));
             }
-        </script>        
+
+            var covers = document.getElementsByClassName('blog-cover');
+            for (var i = 0, size = covers.length; i < size; i++) {
+                var bgImg = "image/blog/blog_" + [i+1] + ".png";
+                if (i == 2)
+                    bgImg = "image/blog/blog_" + [i+1] + ".jpg";
+                covers[i].style.backgroundImage = "url(" + bgImg + ")";
+            }
+        </script>   
+        <script>
+            
+        </script>     
     </body>
     
 </html>
