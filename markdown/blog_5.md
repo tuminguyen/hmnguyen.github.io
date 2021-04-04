@@ -122,7 +122,7 @@ Please note that the IP address with 192.168.1.x on the screen is just a local I
 ![public_ip_s4](../image/associate_ip_3.png)
 
 Then FINISHED. Do that for all the 4 nodes until end up with something like this:
-![public_ip_final](../image/associate_ip_final.png). 
+![public_ip_final](../image/associate_ip_final.png)
 
 
 # Make your hands dirty
