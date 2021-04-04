@@ -25,8 +25,8 @@
     $('.demo-slider').owlCarousel({
         autoplay: true,
         autoplayTimeout: 1800,
-        autoplayHoverPause: false,
-        loop:true,
+        autoplayHoverPause: true,
+        // loop:true,
         margin:10,
         nav:true,
         autoHeight:true,

@@ -212,11 +212,11 @@
                                 </div>
                                 <div class="post-slide">
                                     <div class="post-img">
-                                        <div class="post-abs"><p>Product #6</p></div>
+                                        <div class="post-abs"><p>Crawl some data and visualize your analysis</p></div>
                                         <img src="image/productnew.png" alt="">
 
                                     </div>
-                                    <h3 class="post-title"><a href="#">Product #6</a></h3>
+                                    <h3 class="post-title"><a href="#">Crawl some data and visualize your analysis</a></h3>
                                     <p class="post-description">
                                         few first line as short descript
                                     </p>
@@ -266,5 +266,14 @@
         <script src="js/jquery-1.12.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            var slides = document.getElementsByClassName('post-slide');
+            console.log(slides.length)
+            for (var i = 0, size = slides.length; i < size; i++) {
+                slides[i].addEventListener('click', function(i) {
+                    console.log('Clicked element index ' + i);
+                }.bind(null, i));
+            }
+        </script>
     </body>
 </html>
