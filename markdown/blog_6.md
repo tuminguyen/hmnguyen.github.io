@@ -111,6 +111,37 @@ Just click on one of them to see.
 
 ![templates-dash](../image/template-dashboard.png)
 
-You can freely change the time range or period to plot. Once you do that, all the graphs will be redrawn then displayed.
+You can freely change the time range or period to plot. Once you do that, all the graphs will be redrawn then displayed. Another way to make the graph looks more lively is to change the refresh rate on Kibana and create some dummies data.
+
+So, to create some fake log, install **hey**
+
+```
+sudo snap install hey
+```
+
+By using snap, it will auto finds the most stable version that is fit to your current OS.
+
+Now, seem like the fake requests have been made by hey. You can see the graph updated like
+![hey-1](../image/nginx-fake.gif)
+
+
+Let's just make it more challenging by sending more requests to the node then see what the graph should look like. Use the following command:
+
+```
+hey -n number_of_requests_in_total -c number_of_request_run_concurrently_ -q rate_limit target_url 
+```
+_Example:_
+
+```
+# Sending 100k requests with 10 requests per 1 second to http://193.167.189.62
+
+hey -n 100000 -c 10 -q 1 http://193.167.189.62
+```
+
+Type ```--help``` for more usage instruction.
+
+```
+hey --help
+```
 
 As the Nginx is a kind of system log, which is not so easy to understand and analyse for the . Hence, in the [next blog](https://tuminguyen.github.io/hmnguyen.github.io/blog_detail.html?id=7), we will try to analyze and aggregate the data with Elasticsearch and **manually** customise the dashboard with the [kaggle terrorism data](https://www.kaggle.com/ash316/terrorism-around-the-world).
