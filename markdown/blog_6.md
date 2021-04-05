@@ -99,10 +99,18 @@ green open .kibana_1                        8aTthMvLT3WsvvaENsXPcA 1 1 613 35 81
 The events here are not 100% real-time but they still have a small delay like 1 minute before displaying for you on Kibana.
 
 
-# Customize your dashboard
+# Discover the dashboard
 
 To manage your own dashboard, click on **Dashboard** icon on the left menu _(the 3rd one)_. 
 
 In here, you can create a new one or reference one of the old templates then customize it to your style. You can also search for the specific keyword like the log you are trying to visualize.
 
 ![dashboard](../image/search-nginx-dashboard.png)
+
+Just click on one of them to see.
+
+![templates-dash](../image/template-dashboard.png)
+
+You can freely change the time range or period to plot. Once you do that, all the graphs will be redrawn then displayed.
+
+As the Nginx is a kind of system log, which is not so easy to understand and analyse for the . Hence, in the [next blog](https://tuminguyen.github.io/hmnguyen.github.io/blog_detail.html?id=7), we will try to analyze and aggregate the data with Elasticsearch and **manually** customise the dashboard with the [kaggle terrorism data](https://www.kaggle.com/ash316/terrorism-around-the-world).
