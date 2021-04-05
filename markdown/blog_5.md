@@ -491,7 +491,7 @@ You can also use ```curl node-x:9200``` to test the connection on **every** node
 
 Then it should be fine.
 
-Let's finish this blog here and ready to crawl some data in the [next post]().
+Let's finish this blog here and ready to crawl some data in the [next post](https://tuminguyen.github.io/hmnguyen.github.io/blog_detail.html?id=6).
 
 
 
