@@ -132,6 +132,20 @@
                         </div>
                     </div>
                 </div>              
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 blog-item">
+                        <div class="blog-cover">
+                        </div>
+                        <div class="blog-descript">
+                            <h2>Aggregate terrorism data, display the work on Kibana</h2>
+                            <p>
+                            </p>
+                            <button type="button" class="btn btn-outline-secondary continue">
+                                Continue reading
+                            </button>
+                        </div>
+                    </div>
+                </div>    
                 
             </div>
         </section>
@@ -151,9 +165,9 @@
 
             var covers = document.getElementsByClassName('blog-cover');
             for (var i = 0, size = covers.length; i < size; i++) {
-                var bgImg = "image/blog/blog_" + [i+1] + ".png";
-                if (i==1 | i == 2 || i == 4)
-                    bgImg = "image/blog/blog_" + [i+1] + ".jpg";
+                var bgImg = "image/blog/blog_" + [i+1] + ".jpg";
+                if (i==0 || i == 3)
+                    bgImg = "image/blog/blog_" + [i+1] + ".png";
                 covers[i].style.backgroundImage = "url(" + bgImg + ")";
             }
         </script>   
