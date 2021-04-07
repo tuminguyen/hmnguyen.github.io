@@ -153,6 +153,6 @@ To share your specific dashboard to your friends, colleagues or any others, you 
 
 ![certbot](../image/site-lfoe.png)
 
-**Notes:** Your friends might be asked about the access information. In here, as I already create a new account for all of you guys so just slap in my face with an email and I will send you the user and password.
+**Notes:** Your friends might be asked about the access information. In here, as I already create a new account for all of you guys so just slap in my face an email and I will send you the user and password.
 
-As the Nginx is a kind of system log, which is not so easy to understand and analyse for the . Hence, in the [next blog](https://tuminguyen.github.io/hmnguyen.github.io/blog_detail.html?id=7), we will try to analyze and aggregate the data with Elasticsearch and **manually** customise the dashboard with the [kaggle terrorism data](https://www.kaggle.com/ash316/terrorism-around-the-world).
+As the Nginx is a kind of system log, which is not so easy to understand and analyse for the . Hence, in the [next blog](https://tuminguyen.github.io/hmnguyen.github.io/blog_detail.html?id=7), we will try to analyze and aggregate the data with Elasticsearch and **manually** customise the dashboard with the [kaggle terrorism data](https://www.kaggle.com/START-UMD/gtd).
