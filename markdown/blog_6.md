@@ -144,4 +144,9 @@ Type ```--help``` for more usage instruction.
 hey --help
 ```
 
+
+Well, below here is an embedded live dashboard that doing some statistics on the Remote IPs _(from my Nginx log)_ I share with you.
+
+<iframe src="https://livelyfreakonearth.ml/app/kibana#/dashboard/ML-Nginx-Access-Remote-IP-Count-Explorer-ecs?embed=true&_g=()&_a=(description:'Machine+learning+dashboard,+for+the+Filebeat+Nginx+module',filters:!(),fullScreenMode:!f,options:(darkTheme:!f),panels:!((gridData:(h:15,i:'1',w:24,x:0,y:0),id:ML-Nginx-Access-Remote-IP-Timechart-ecs,panelIndex:'1',type:visualization,version:'7.0.1'),(gridData:(h:15,i:'2',w:24,x:24,y:0),id:ML-Nginx-Access-Response-Code-Timechart-ecs,panelIndex:'2',type:visualization,version:'7.0.1'),(embeddableConfig:(vis:(params:(sort:(columnIndex:!n,direction:!n)))),gridData:(h:15,i:'3',w:24,x:0,y:15),id:ML-Nginx-Access-Top-Remote-IPs-Table-ecs,panelIndex:'3',type:visualization,version:'7.0.1'),(gridData:(h:15,i:'4',w:24,x:24,y:15),id:ML-Nginx-Access-Map-ecs,panelIndex:'4',type:visualization,version:'7.0.1'),(embeddableConfig:(vis:(params:(sort:(columnIndex:!n,direction:!n)))),gridData:(h:45,i:'5',w:48,x:0,y:30),id:ML-Nginx-Access-Top-URLs-Table-ecs,panelIndex:'5',type:visualization,version:'7.0.1')),query:(language:lucene,query:(query_string:(analyze_wildcard:!t,query:'*'))),timeRestore:!f,title:'%5BFilebeat+Nginx%5D+%5BML%5D++Remote+IP+Count+Explorer+ECS',viewMode:view)" height="600" width="800"></iframe>
+
 As the Nginx is a kind of system log, which is not so easy to understand and analyse for the . Hence, in the [next blog](https://tuminguyen.github.io/hmnguyen.github.io/blog_detail.html?id=7), we will try to analyze and aggregate the data with Elasticsearch and **manually** customise the dashboard with the [kaggle terrorism data](https://www.kaggle.com/ash316/terrorism-around-the-world).
