@@ -147,7 +147,7 @@ hey --help
 
 Well, below here is an embedded live dashboard that doing some statistics on the Remote IPs _(from my Nginx system log)_. You can freely interact with it.
 
-<iframe src="https://livelyfreakonearth.ml/goto/95fbf9ee51e03dc1a4acddaaa79ce879?embed=true" height="600" width="1100"></iframe>
+<iframe src="https://livelyfreakonearth.ml/app/kibana#/dashboard/412b34f0-9ab9-11eb-86f8-a73e24150a95?embed=true&_g=(refreshInterval:(pause:!t,value:0),time:(from:now%2FM,to:now%2FM))&_a=(description:'',filters:!(),fullScreenMode:!f,options:(hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(mapCenter:!(59.79992830992723,77.8767075),mapZoom:3),gridData:(h:18,i:'1',w:48,x:0,y:0),id:'6eee67f0-9ab8-11eb-86f8-a73e24150a95',panelIndex:'1',title:'Remote+IP+NGINX+map',type:visualization,version:'7.0.1'),(embeddableConfig:(),gridData:(h:17,i:'2',w:29,x:0,y:18),id:c5ee1080-9aba-11eb-86f8-a73e24150a95,panelIndex:'2',type:visualization,version:'7.0.1'),(embeddableConfig:(),gridData:(h:17,i:'3',w:19,x:29,y:18),id:'0c99d770-9abc-11eb-86f8-a73e24150a95',panelIndex:'3',type:visualization,version:'7.0.1')),query:(language:kuery,query:''),timeRestore:!f,title:'My+Nginx+Dashboard',viewMode:edit)" height="600" width="1150"></iframe>
 
 To share your specific dashboard to your friends, colleagues or any others, you must make your Kibana's access URL to be a real domain by using [Freenom](https://www.freenom.com/en/index.html?lang=en). It is free up to 12 months. You also need to install [Certbot](https://certbot.eff.org/), choose the proper _software_ and _system_ and just follow the steps to make your website more secured by changing from HTTP to HTTPS. Just like this.
 
