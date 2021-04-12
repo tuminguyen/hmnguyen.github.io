@@ -129,4 +129,3 @@ Finally, you can save the visualization and push them to dashboard. It's your ti
 - For your practice, you should import just a small part of data, not all documents. In here I import ~120K  documents on my local machine so it will be much slower compared to doing that on the node of CSC. The best documents should be around 30K. 
 
 - You can shuffle the data first then bulk with a random data or just choose the specific time range to scope the data
-
