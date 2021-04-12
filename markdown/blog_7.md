@@ -96,10 +96,7 @@ mappings = {
 
 
 <h1 style="margin-top: 25px">Analyze and display dashboard on Kibana</h1>
-Now, let's try to do some aggregations and show it on the Kibana dashboard.
-
-
-With ELK Stack version 7.12, you are fully supported to easily plot your data. 
+Now, let's try to do some aggregations and show it on the Kibana dashboard. With ELK Stack version 7.12, you are fully supported to easily plot your data. 
 
 _Some examples:_
 
@@ -123,8 +120,7 @@ _Some examples:_
 
 ![kibana-region](../image/b7_regions.png)
 
-
-Finally, you can save the visualization and push them to dashboard.
+Finally, you can save the visualization and push them to dashboard. It's your time to try now.
 
 ![kibana-first-graph](../image/add-kibana-dashboard.gif)
 
