@@ -19,6 +19,7 @@ Basically, what I just do in there are:
 - Parse the data into my wanted format. The detail meaning of each column is described in [this codebook](https://start.umd.edu/gtd/downloads/Codebook.pdf). You can base on that to customize your filter, drop any columns and keep only your interested data.
 - Index documents
 
+Below is my customized format that you can consider:
 
 ```json
 {
