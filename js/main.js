@@ -45,6 +45,28 @@
         }
     })
     
+
+    $('#artwork-slider').owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        loop: true,
+        margin:10,
+        autoHeight:true,
+        autoHeightClass: 'owl-height',
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+
     $(window).on('scroll', function () {
         if ( $(window).scrollTop() > 10 ) {
              $('.navbar').addClass('active');

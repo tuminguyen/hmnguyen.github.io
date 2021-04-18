@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="HM Nguyen">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/blog.css">
     </head>
@@ -38,7 +40,7 @@
                 </div>
 			</div>
 		</header>
-        <section>
+        <section id="blog-demo">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 ">
@@ -162,11 +164,56 @@
                 </div>    
             </div>
         </section>
+        
+        <section id="artwork">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 ">
+                        <div id="artwork-slider" class="artwork-slider owl-theme owl-carousel">
+                            <div class="art-slide">
+                                <div class="art-img">
+                                    <div class="art-abs"><p>Support me on <a href="https://www.artpal.com/tuminguyen?i=122985-6">ArtPal</a></p></div>
+                                    <img src="image/art_work/artwork_00.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="art-slide">
+                                <div class="art-img">
+                                    <div class="art-abs"><p>Support me on <a href="https://www.artpal.com/tuminguyen?i=122985-7">ArtPal</a></p></div>
+                                    <img src="image/art_work/artwork_01.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="art-slide">
+                                <div class="art-img">
+                                    <div class="art-abs"><p>Support me on <a href="https://www.artpal.com/tuminguyen?i=122985-3">ArtPal</a></p></div>
+                                    <img src="image/art_work/artwork_02.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="art-slide">
+                                <div class="art-img">
+                                    <div class="art-abs"><p>Support me on <a href="https://www.artpal.com/tuminguyen?i=122985-4">ArtPal</a></p></div>
+                                    <img src="image/art_work/artwork_03.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="art-slide">
+                                <div class="art-img">
+                                    <div class="art-abs"><p>Support me on <a href="https://www.artpal.com/tuminguyen?i=122985-2">ArtPal</a></p></div>
+                                    <img src="image/art_work/artwork_04.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
         <script>
-            var buttons = document.getElementsByTagName('button');
+            var buttons = document.getElementById('blog-demo').getElementsByTagName('button');
 
             for (var i = 0, size = buttons.length; i < size; i++) {
                 buttons[i].addEventListener('click', function(i) {

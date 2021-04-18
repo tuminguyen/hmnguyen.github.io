@@ -502,7 +502,7 @@ div#demo-slider .owl-next {
   padding: 10px;
 }
 
-.post-slide{
+.post-slide, .art-slide{
   margin-left: 10px;
   margin-right: 10px;
   background:#fff;
@@ -512,19 +512,19 @@ div#demo-slider .owl-next {
   overflow: hidden;
 }
 
-.post-slide .post-img{
+.post-slide .post-img, .art-slide .art-img{
   position:relative;
   margin-bottom:20px;
   height: 300px;
   overflow: hidden;
 }
 
-.post-slide .post-img img{
+.post-slide .post-img img, .art-slide .art-img img{
   width:100%;
   height: 100%;
 }
 
-.post-abs {
+.post-abs, .art-abs {
   width: 0px;
   height: 100%;
   position: absolute;
@@ -532,18 +532,18 @@ div#demo-slider .owl-next {
   transition: width 0.5s;
 }
 
-.post-img:hover .post-abs{
+.post-img:hover .post-abs, .art-img:hover .art-abs{
   width: 100%;
 }
 
-.post-img p {
+.post-img p, .art-img p {
   color: #fff;
   margin-top: 150px;
   text-align: center;
   visibility: hidden;
 }
 
-.post-img:hover p {
+.post-img:hover p, .art-img:hover p{
   visibility: visible;
   animation-duration: 2s;
   animation-iteration-count: 1;
