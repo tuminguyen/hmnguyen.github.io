@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/about.css">
         <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/dashboard.css">
     </head>
     <body>
         <!-- Header Area Start -->
@@ -45,23 +46,46 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 ">
-                        <iframe src="https://livelyfreakonearth.ml/goto/4738b49f19c657df7d154c9830b1ec30" height="600" width="1200"></iframe>
+                        <div class="tab">
+                            <button class="tablinks" onclick="openVisualization(event, 'gdeltNews')">TV News</button>
+                            <button class="tablinks" onclick="openVisualization(event, 'gdeltEvent')">Global Event</button>
+                            <button class="tablinks" onclick="openVisualization(event, 'picam')">Pi Cam</button>
+                          </div>
+                          
+                          <div id="gdeltNews" class="tabcontent">
+                            <iframe src="https://livelyfreakonearth.ml/goto/4738b49f19c657df7d154c9830b1ec30" height="600" width="1300"></iframe>
+                          </div>
+                          
+                          <div id="gdeltEvent" class="tabcontent">
+                            <iframe src="https://livelyfreakonearth.ml/goto/278dd0b8c8e5f443464565d009e8949d" height="600" width="1300"></iframe>
+                          </div>
+                          
+                          <div id="picam" class="tabcontent">
+                            
+                          </div>
+                        
                     </div>
                 </div>
             </div>
         </section>       
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery-1.12.0.min.js"></script> 
-    </body>
-    
-</html>
-
-                    </div>
-                </div>
-            </div>
-        </section>       
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery-1.12.0.min.js"></script> 
+        <script>
+            function openVisualization(evt, target) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(target).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            </script>
     </body>
     
 </html>
