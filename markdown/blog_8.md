@@ -121,9 +121,7 @@ You can now do some statistic from your picam data log.
 ![picam-kibana-0](../image/b8_picam_on_kibana_1.png)
 
 
-<iframe src="https://livelyfreakonearth.ml/goto/3f3383c4d403b2ad8bc28574a6def8e5" height="910" width="1160"></iframe>
+![dashboard-cap](../image/b8_dashboard_capture.png)
 
 <span style="color: rgb(0, 153, 0); font-weight: bold">Super easy peasy! Enjoyyy !</span>
-
-
 
