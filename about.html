@@ -60,7 +60,8 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 ">
                         <div id="iframe-wrap">
-                            <iframe id="introvid" width="600" height="450" src="https://www.youtube.com/embed/ILsQa4u2950"></iframe> 
+                            <iframe id="introvid" width="600" height="450" src="about:blank"></iframe> 
+                            <div id="na-noti" style="display: none; font-weight: bold;">The video is not available anymore. Sorry for the inconvenience.</div>
                         </div>
                     </div>
                 </div>
@@ -79,14 +80,20 @@
         <script src="js/jquery-easing/jquery.easing.min.js"></script>
         <script>
             $('#toggle_vid_btn').click(function(){
-                $('.text-center').animate({'margin-left': '-700'}, 1000);
-                $('#iframe-wrap').animate({'margin-right': '-200', 'margin-top': '-450'});
-                $('#introvid').show(3000);
-            });
-            
+                if (!$("#introvid").length) {
+                    $('.text-center').animate({'margin-left': '-700'}, 1000);
+                    $('#iframe-wrap').animate({'margin-right': '-200', 'margin-top': '-450'});
+                    $('#introvid').show(3000);
+                }
+                else{
+                    $("#na-noti").show();
+                }
+            }
+            );
             $('strong').each(function(){
                 $(this).css('color', '#'+(Math.random()*0xFFFFFF<<0).toString(16));
             });
+            
         </script>    
     </body>
     
